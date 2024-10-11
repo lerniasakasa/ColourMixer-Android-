@@ -190,45 +190,77 @@
             android:paddingBottom="20dp">
 
             <ImageView
-                android:layout_width="48dp"
+                android:id="@+id/colourRed"
+                android:layout_width="35dp"
                 android:layout_height="40dp"
                 android:background="#FF0000"
+                android:layout_margin="6dp"
+                android:clickable="true"
+                android:focusable="true"
                 android:contentDescription="@string/colourswatch"/>
             <ImageView
-                android:layout_width="48dp"
+                android:id="@+id/colourOrange"
+                android:layout_width="35dp"
                 android:layout_height="40dp"
                 android:background="#FFA500"
-                android:contentDescription="@string/colourswatch" />
+                android:contentDescription="@string/colourswatch"
+                android:layout_margin="6dp"
+                android:clickable="true"
+                android:focusable="true"/>
             <ImageView
-                android:layout_width="45dp"
+                android:id="@+id/colourYellow"
+                android:layout_width="35dp"
                 android:layout_height="40dp"
                 android:background="#FFFF00"
-                android:contentDescription="@string/colourswatch"/>
+                android:contentDescription="@string/colourswatch"
+                android:layout_margin="6dp"
+                android:clickable="true"
+                android:focusable="true"/>
             <ImageView
-                android:layout_width="45dp"
+                android:id="@+id/colourBlue"
+                android:layout_width="35dp"
                 android:layout_height="40dp"
                 android:background="#0000FF"
-                android:contentDescription="@string/colourswatch"/>
+                android:contentDescription="@string/colourswatch"
+                android:layout_margin="6dp"
+                android:clickable="true"
+                android:focusable="true"/>
             <ImageView
-                android:layout_width="45dp"
+                android:id="@+id/colourGreen"
+                android:layout_width="35dp"
                 android:layout_height="40dp"
                 android:background="#00FF00"
-                android:contentDescription="@string/colourswatch"/>
+                android:contentDescription="@string/colourswatch"
+                android:layout_margin="6dp"
+                android:clickable="true"
+                android:focusable="true"/>
             <ImageView
-                android:layout_width="45dp"
+                android:id="@+id/colourPurple"
+                android:layout_width="35dp"
                 android:layout_height="40dp"
                 android:background="#800080"
-                android:contentDescription="@string/colourswatch"/>
+                android:contentDescription="@string/colourswatch"
+                android:layout_margin="6dp"
+                android:clickable="true"
+                android:focusable="true"/>
             <ImageView
-                android:layout_width="48dp"
+                android:id="@+id/colourWhite"
+                android:layout_width="35dp"
                 android:layout_height="40dp"
                 android:background="#FFFFFF"
-                android:contentDescription="@string/colourswatch"/>
+                android:contentDescription="@string/colourswatch"
+                android:layout_margin="6dp"
+                android:clickable="true"
+                android:focusable="true"/>
             <ImageView
-                android:layout_width="48dp"
+                android:id="@+id/colourBlack"
+                android:layout_width="35dp"
                 android:layout_height="40dp"
                 android:background="#000000"
-                android:contentDescription="@string/colourswatch"/>
+                android:contentDescription="@string/colourswatch"
+                android:layout_margin="6dp"
+                android:clickable="true"
+                android:focusable="true"/>
 
 
         </LinearLayout>

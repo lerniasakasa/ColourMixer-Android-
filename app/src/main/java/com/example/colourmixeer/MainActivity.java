@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -40,6 +41,15 @@ public class MainActivity extends AppCompatActivity {
         resultColor = findViewById(R.id.resultColor);
         mixButton = findViewById(R.id.mixButton);
 
+        ImageView colorRed = findViewById(R.id.colourRed);
+        ImageView colorYellow = findViewById(R.id.colourYellow);
+        ImageView colorBlue = findViewById(R.id.colourBlue);
+        ImageView colorOrange = findViewById(R.id.colourOrange);
+        ImageView colorGreen = findViewById(R.id.colourGreen);
+        ImageView colorPurple = findViewById(R.id.colourPurple);
+        ImageView colorWhite = findViewById(R.id.colourWhite);
+        ImageView colorBlack = findViewById(R.id.colourBlack);
+
         // Setting up color options
         String[] colors = {"Red", "Orange", "Yellow", "Blue", "Green", "Purple", "Black", "White"};
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, colors);
@@ -55,6 +65,65 @@ public class MainActivity extends AppCompatActivity {
                 mixColors();
             }
         });
+
+        colorRed.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                updateResult(Color.RED);
+            }
+        });
+
+        colorYellow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                updateResult(Color.YELLOW);
+            }
+        });
+
+        colorBlue.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                updateResult(Color.BLUE);
+            }
+        });
+        colorGreen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                updateResult(Color.GREEN);
+            }
+        });
+
+        //Color class in Android doesn't directly support some color constants like ORANGE and PURPLE.
+        // RGB values for these colors are defined manually.
+        colorOrange.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Orange RGB: 255, 165, 0
+                updateResult(Color.rgb(255, 165, 0));
+            }
+        });
+
+        colorPurple.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Purple RGB: 128, 0, 128
+                updateResult(Color.rgb(128, 0, 128));
+            }
+        });
+
+        colorBlack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                updateResult(Color.BLACK);
+            }
+        });
+        colorWhite.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                updateResult(Color.WHITE);
+            }
+        });
+
     }
 
     private void mixColors() {
@@ -133,5 +202,26 @@ public class MainActivity extends AppCompatActivity {
             default:
                 return Color.WHITE;
         }
+    }
+
+    private void updateResult(int color) {
+        // Update result color display
+        View resultView = findViewById(R.id.resultColor); // Assuming this is the circle showing the result
+        resultView.setBackgroundColor(color);
+
+        // Extract RGB components
+        int red = Color.red(color);
+        int green = Color.green(color);
+        int blue = Color.blue(color);
+
+        // Convert to Hex code
+        String hexCode = String.format("#%02X%02X%02X", red, green, blue);
+
+        // Set the values in the TextViews
+        TextView hexCodeView = findViewById(R.id.hexCodeValue);
+        TextView rgbValueView = findViewById(R.id.rgbValue);
+
+        hexCodeView.setText(hexCode);
+        rgbValueView.setText("RGB(" + red + ", " + green + ", " + blue + ")");
     }
 }
