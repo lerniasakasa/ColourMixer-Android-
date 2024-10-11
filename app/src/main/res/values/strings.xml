@@ -4,4 +4,5 @@
     <string name="result">RESULT</string>
     <string name="quantity">Quantity (%)</string>
     <string name="mix">MIX</string>
+    <string name="colourswatch">colour</string>
 </resources>

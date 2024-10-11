@@ -32,35 +32,43 @@
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:background="#FF0000" />
+                android:background="#FF0000"
+                android:contentDescription="@string/colourswatch"/>
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:background="#FFA500" />
+                android:background="#FFA500"
+                android:contentDescription="@string/colourswatch" />
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:background="#FFFF00" />
+                android:background="#FFFF00"
+                android:contentDescription="@string/colourswatch"/>
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:background="#0000FF" />
+                android:background="#0000FF"
+                android:contentDescription="@string/colourswatch"/>
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:background="#00FF00" />
+                android:background="#00FF00"
+                android:contentDescription="@string/colourswatch"/>
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:background="#800080" />
+                android:background="#800080"
+                android:contentDescription="@string/colourswatch"/>
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:background="#000000" />
+                android:background="#000000"
+                android:contentDescription="@string/colourswatch"/>
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:background="#FFFFFF" />
+                android:background="#FFFFFF"
+                android:contentDescription="@string/colourswatch"/>
         </LinearLayout>
 
         <!-- Result Section -->
@@ -89,13 +97,13 @@
             <Spinner
                 android:id="@+id/color1Spinner"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_weight="1" />
 
             <EditText
                 android:id="@+id/color1Proportion"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:autofillHints="@string/quantity"
                 android:hint="@string/quantity"
                 android:inputType="numberDecimal"
@@ -110,13 +118,13 @@
             <Spinner
                 android:id="@+id/color2Spinner"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_weight="1" />
 
             <EditText
                 android:id="@+id/color2Proportion"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:autofillHints="@string/quantity"
                 android:hint="@string/quantity"
                 android:inputType="numberDecimal"
@@ -131,13 +139,13 @@
             <Spinner
                 android:id="@+id/color3Spinner"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_weight="1" />
 
             <EditText
                 android:id="@+id/color3Proportion"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:autofillHints="@string/quantity"
                 android:hint="@string/quantity"
                 android:inputType="numberDecimal"
