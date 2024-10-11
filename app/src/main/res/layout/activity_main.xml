@@ -12,64 +12,20 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <!-- Colour Palette Section -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/palette"
-            android:textStyle="italic"
-            android:textSize="16sp"
+            android:text="@string/colour_mixer"
+            android:textStyle="bold"
+            android:textSize="30sp"
             android:layout_gravity="center"/>
 
-        <!-- Horizontal Palette -->
-        <LinearLayout
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center"
-            android:paddingBottom="20dp">
-
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:background="#FF0000"
-                android:contentDescription="@string/colourswatch"/>
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:background="#FFA500"
-                android:contentDescription="@string/colourswatch" />
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:background="#FFFF00"
-                android:contentDescription="@string/colourswatch"/>
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:background="#0000FF"
-                android:contentDescription="@string/colourswatch"/>
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:background="#00FF00"
-                android:contentDescription="@string/colourswatch"/>
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:background="#800080"
-                android:contentDescription="@string/colourswatch"/>
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:background="#000000"
-                android:contentDescription="@string/colourswatch"/>
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:background="#FFFFFF"
-                android:contentDescription="@string/colourswatch"/>
-        </LinearLayout>
+            android:text=""
+            android:textSize="16sp"
+            android:layout_gravity="center"/>
 
         <!-- Result Section -->
         <View
@@ -77,7 +33,7 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_gravity="center"
-            android:background="#009688"
+            android:background="#808080"
             android:layout_marginBottom="16dp"/>
 
         <TextView
@@ -88,6 +44,19 @@
             android:textSize="18sp"
             android:layout_gravity="center" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_your_colours_and_quantity"
+            android:textSize="16sp"
+            android:layout_gravity="center"/>
         <!-- Colour and Quantity Selection Section -->
         <LinearLayout
             android:layout_width="match_parent"
@@ -159,6 +128,73 @@
             android:layout_height="wrap_content"
             android:text="@string/mix"
             android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:layout_gravity="center"/>
+        <!-- Colour Palette Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/palette"
+            android:textStyle="italic"
+            android:textSize="16sp"
+            android:layout_gravity="center"/>
+
+        <!-- Horizontal Palette -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingBottom="20dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#FF0000"
+                android:contentDescription="@string/colourswatch"/>
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#FFA500"
+                android:contentDescription="@string/colourswatch" />
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:background="#FFFF00"
+                android:contentDescription="@string/colourswatch"/>
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:background="#0000FF"
+                android:contentDescription="@string/colourswatch"/>
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:background="#00FF00"
+                android:contentDescription="@string/colourswatch"/>
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:background="#800080"
+                android:contentDescription="@string/colourswatch"/>
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#FFFFFF"
+                android:contentDescription="@string/colourswatch"/>
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#000000"
+                android:contentDescription="@string/colourswatch"/>
+
+
+        </LinearLayout>
     </LinearLayout>
 
 
