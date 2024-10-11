@@ -24,7 +24,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=""
-            android:textSize="16sp"
+            android:textSize="32sp"
             android:layout_gravity="center"/>
 
         <!-- Result Section -->
@@ -35,6 +35,37 @@
             android:layout_gravity="center"
             android:background="#808080"
             android:layout_marginBottom="16dp"/>
+
+        <!-- Add this to your existing layout under the result color circle -->
+        <TextView
+            android:id="@+id/hexCodeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hex Code:"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/hexCodeValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/n_a"
+            android:layout_marginStart="8dp"/>
+
+        <TextView
+            android:id="@+id/rgbLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rgb_value"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/rgbValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/n_a"
+            android:layout_marginStart="8dp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -121,6 +152,12 @@
                 android:layout_weight="1" />
         </LinearLayout>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="32sp"
+            android:layout_gravity="center"/>
         <!-- Mix Button -->
         <Button
             android:id="@+id/mixButton"

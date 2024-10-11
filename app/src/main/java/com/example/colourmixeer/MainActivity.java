@@ -7,6 +7,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -86,6 +87,25 @@ public class MainActivity extends AppCompatActivity {
 
             // Set result color
             resultColor.setBackgroundColor(Color.rgb(red, green, blue));
+
+            // After you calculate the mixedColor
+            int mixedColor = Color.rgb(red, green, blue);
+
+// Extract RGB components
+            int redFinal = Color.red(mixedColor);
+            int greenFinal = Color.green(mixedColor);
+            int blueFinal = Color.blue(mixedColor);
+
+// Convert to Hex code
+            String hexCode = String.format("#%02X%02X%02X", red, green, blue);
+
+// Set the values in the TextViews
+            TextView hexCodeView = findViewById(R.id.hexCodeValue);
+            TextView rgbValueView = findViewById(R.id.rgbValue);
+
+            hexCodeView.setText(hexCode);
+            rgbValueView.setText("RGB(" + red + ", " + green + ", " + blue + ")");
+
 
         } catch (NumberFormatException e) {
             Toast.makeText(this, "Please enter valid proportions", Toast.LENGTH_SHORT).show();

@@ -7,4 +7,6 @@
     <string name="colourswatch">colour</string>
     <string name="colour_mixer">COLOUR MIXER</string>
     <string name="choose_your_colours_and_quantity">Choose your colours and quantity</string>
+    <string name="rgb_value">RGB Value:</string>
+    <string name="n_a">N/A</string>
 </resources>
